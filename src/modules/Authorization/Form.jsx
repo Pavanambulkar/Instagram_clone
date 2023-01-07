@@ -5,7 +5,7 @@ import Input from "../../components/input";
 const Form = ({
     // isSignInPage = false
 }) => {
-    const {isSignInPage, setIsSignInPage} = useState(false);
+    const [isSignInPage, setIsSignInPage] = useState(true);
   return <div className="bg-[#d2cfdf] h-screen w-full flex justify-center items-center">
     <div className="h-[600px] w-[800px] bg-white flex justify-center items-center">
         <div className= {`h-full w-full flex flex-col justify-center items-center ${!isSignInPage && 'order-2'}`}>
@@ -20,11 +20,11 @@ const Form = ({
 
             <Input label="email" type="email" placeholder="Enter your email" />
             <Input label="password" type="password" placeholder="Enter your password" />
-            <Button label= {isSignInPage ?"Sign In" : "Register"} />
+            <Button label= {!isSignInPage ?"Sign In" : "Register"} />
 
 
            </form>
-           <div className="cursor-pointer">
+           <div className="cursor-pointer" onClick={() => setIsSignInPage(!isSignInPage)}>
             {
                 isSignInPage ? "Create New Account" : "Sign In"
             }
