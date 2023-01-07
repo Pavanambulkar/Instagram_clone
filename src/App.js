@@ -1,11 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import Auth from './modules/Authorization';
+// import Auth from './modules/Authorization';
+import Home from './modules/Home';
 
 function App() {
   return (
     <div >
-      <Auth/>
+      {/* <Auth/> */}
+      <Home/>
     </div>
   );
 }
