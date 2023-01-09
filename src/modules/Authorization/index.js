@@ -2,7 +2,8 @@ import React from "react";
 import Form from "./Form";
 
 const Auth = () => {
-  return <Form />;
+  const isSignInPage = window.location.pathname.includes('signin')
+  return <Form isSignInPage = {isSignInPage} />;
 };
 
 export default Auth;

@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import Button from "../../components/button";
 import Input from "../../components/input";
-
+import { useNavigate } from "react-router-dom";
 const Form = ({
-    // isSignInPage = false
+    isSignInPage = false
 }) => {
-    const [isSignInPage, setIsSignInPage] = useState(true);
+  const navigate = useNavigate()
   return <div className="bg-[#d2cfdf] h-screen w-full flex justify-center items-center">
     <div className="h-[600px] w-[800px] bg-white flex justify-center items-center">
         <div className= {`h-full w-full flex flex-col justify-center items-center ${!isSignInPage && 'order-2'}`}>
@@ -24,7 +24,7 @@ const Form = ({
 
 
            </form>
-           <div className="cursor-pointer" onClick={() => setIsSignInPage(!isSignInPage)}>
+           <div className="cursor-pointer" onClick={() => navigate(`${isSignInPage ? '/account/signup' : '/account/signin'}`)}>
             {
                 isSignInPage ? "Create New Account" : "Sign In"
             }
