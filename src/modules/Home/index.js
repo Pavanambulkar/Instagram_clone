@@ -128,26 +128,28 @@ const Home = () => {
         </div>
       </div>
       <div className="w-[20%] bg-[#F2F5F8]">
-        <div className="flex flex-col justify-center items-center ">
-        <div className="border h-[100px] w-[100%] bg-pink-200">
-          <h4>Trending Feeds</h4>
-          <div className=" h-[40%] bg-pink-600">
-            hii
-          </div>
-        </div>
-        {/*  */}
-        <div>
-        <h4>Suggestion For You</h4>
+           <h4 className="font-bold text-xl mt-2 w-[90%] m-auto">Trending Feeds</h4>
+           <div className="bg-pink-400 h-[34%] w-[90%] m-auto mt-2 ">
+hii
+           </div>
+           {/*  */}
+           <h4 className="font-bold text-xl mt-2 w-[90%] m-auto">
 
-          <div className=" h-[40%] bg-pink-600">I am</div>
-        </div>
-        {/*  */}
-        <div>
-        <h4>Active Followers</h4>
+           Suggestion For You
+           </h4>
+           <div className="bg-blue-400 w-[90%] m-auto h-[34%] mt-2 ">
+hii
+           </div>
+           {/*  */}
+           <h4 className="font-bold text-xl mt-2 w-[90%] m-auto">
 
-          <div className=" h-[20%] bg-pink-600">Pavan</div>
-        </div>
-        </div>
+           Active Followers
+           </h4>
+           <div className="bg-pink-400 w-[90%] m-auto h-[32%] mt-2 ">
+hii
+           </div>
+       
+        
         
         
       </div>
